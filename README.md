@@ -22,7 +22,7 @@
 ## 環境需求
 
 - Android Studio（Android Gradle Plugin 8.8.0、Gradle 8.10.2）
-- JDK 11 以上
+- JDK 17 以上（Android Studio 已內建，不需另外安裝）
 - compileSdk / targetSdk 35，minSdk 24（Android 7.0 以上）
 
 ## 執行方式
