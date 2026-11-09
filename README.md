@@ -2,35 +2,15 @@
 
 大學期間修習**行動裝置程式設計**課程的練習內容，以 Java 撰寫，共 27 個 Android app。`CHx` 為課堂練習，`_hw` 為作業，`Mid_*`、`Final_*` 為期中與期末考題。
 
-| 資料夾 | App | 練習重點 |
-|---|---|---|
-| [`CH2_hw`](CH2_hw/) | 變大變小 | `EditText`、`setTextSize()`、`android:onClick` |
-| [`CH3`](CH3/) | 通訊錄 | `EditText` 讀取輸入、字串比對 |
-| [`CH3_5`](CH3_5/) | 變變變 | `Random`、`Color.rgb()` |
-| [`CH3_5_hw`](CH3_5_hw/) | 變變變 Ver.2 | `EditText` 輸入 RGB、`setBackgroundColor()` |
-| [`CH4`](CH4/) | 計數器 | `OnClickListener`、`OnLongClickListener`（匿名類別） |
-| [`CH4_hw`](CH4_hw/) | 開關燈 | Activity 實作 Listener 介面，用 `getId()` 分辨按鈕 |
-| [`CH4_5`](CH4_5/) | 震動按摩器 | `OnTouchListener`、`Vibrator` |
-| [`CH4_5hw`](CH4_5hw/) | 七彩動霓虹 | `OnTouchListener`（`ACTION_MOVE`）、`Vibrator`、隨機變色 |
-| [`CH5_1`](CH5_1/) | 買票 | `RadioGroup`、`RadioButton` |
-| [`CH5_1_2`](CH5_1_2/) | 溫度換算 | `RadioGroup.OnCheckedChangeListener`、`TextWatcher` 即時計算 |
-| [`CH5_1_hw`](CH5_1_hw/) | 買地瓜 | 兩組 `RadioGroup`、`TextWatcher` |
-| [`CH5_2`](CH5_2/) | 文字 foodMenu | `CheckBox`、`isChecked()` |
-| [`CH5_2_hw`](CH5_2_hw/) | 圖文整合 foodMenu | `CheckBox.OnCheckedChangeListener`、`ImageView`、`setVisibility()` |
-| [`CH6_1`](CH6_1/) | 電影訂票 | `Spinner`、`string-array` |
-| [`CH6_2`](CH6_2/) | 電費計算 | `Spinner.OnItemSelectedListener`、`TextWatcher` |
-| [`CH6_3`](CH6_3/) | 關東煮 | `ListView`、`OnItemClickListener` |
-| [`CH6_3_2`](CH6_3_2/) | 地區選擇 | `ArrayAdapter`、兩個 `Spinner` 連動 |
-| [`CH7_1`](CH7_1/) | 腦筋急轉彎 | `ListView`、`ArrayAdapter`、`Snackbar` |
-| [`CH7_2`](CH7_2/) | 畢業問卷調查 | `AlertDialog`、`ImageView` |
-| [`CH7_3`](CH7_3/) | 時間選擇器 | `DatePickerDialog`、`TimePickerDialog` |
-| [`CH8_1`](CH8_1/) | 歡迎光臨長庚大學 | `Intent` 切換多個 Activity |
-| [`CH8_2`](CH8_2/) | 體重計算機 | `Intent.putExtra()` 傳遞資料 |
-| [`CH8_3`](CH8_3/) | 記帳本 | `startActivityForResult()`、`setResult()`、`DatePickerDialog` |
-| [`CH8_4`](CH8_4/) | 備忘錄 | `ListView`、`startActivityForResult()`、`Toast` |
-| [`Mid_1`](Mid_1/) | 期中：隨機數遊戲 | `CheckBox` 勾選上限、`RadioGroup`、`TextWatcher`、`Random` |
-| [`Mid_3`](Mid_3/) | 期中：購物車 | `CheckBox`、`RadioGroup` 幣別換算、`setVisibility()` |
-| [`Final_1`](Final_1/) | 期末：點飲料 | `Spinner` 連動、`AlertDialog`、`startActivityForResult()` |
+| 主題 | 章節 | 練習內容 | App |
+|---|---|---|---|
+| 基本元件 | CH2–3 | TextView、EditText、顏色 | [變大變小](CH2_hw/)、[通訊錄](CH3/)、[變變變](CH3_5/)、[變變變 Ver.2](CH3_5_hw/) |
+| 事件處理 | CH4 | 點擊、長按、觸控、震動 | [計數器](CH4/)、[開關燈](CH4_hw/)、[震動按摩器](CH4_5/)、[七彩動霓虹](CH4_5hw/) |
+| 選擇元件 | CH5 | RadioButton、CheckBox、TextWatcher | [買票](CH5_1/)、[溫度換算](CH5_1_2/)、[買地瓜](CH5_1_hw/)、[文字 foodMenu](CH5_2/)、[圖文整合 foodMenu](CH5_2_hw/) |
+| 清單 | CH6 | Spinner、ListView、Adapter | [電影訂票](CH6_1/)、[電費計算](CH6_2/)、[關東煮](CH6_3/)、[地區選擇](CH6_3_2/) |
+| 對話框 | CH7 | AlertDialog、Snackbar、日期 / 時間選擇器 | [腦筋急轉彎](CH7_1/)、[畢業問卷調查](CH7_2/)、[時間選擇器](CH7_3/) |
+| 多頁面 | CH8 | Intent、Activity 間傳遞資料 | [歡迎光臨長庚大學](CH8_1/)、[體重計算機](CH8_2/)、[記帳本](CH8_3/)、[備忘錄](CH8_4/) |
+| 考試 | Mid / Final | 綜合以上 | 期中：[隨機數遊戲](Mid_1/)、[購物車](Mid_3/)；期末：[點飲料](Final_1/) |
 
 ## 環境需求
 
