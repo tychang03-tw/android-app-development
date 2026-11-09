@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">電費計算</string>
+    <string-array name="volt">
+        <item>110V</item>
+        <item>220V</item>
+    </string-array>
+</resources>

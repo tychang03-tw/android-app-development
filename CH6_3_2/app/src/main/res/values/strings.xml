@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">地區選擇</string>
+    <string-array name="regions">
+        <item>北部</item>
+        <item>中部</item>
+        <item>南部</item>
+        <item>東部</item>
+    </string-array>
+</resources>

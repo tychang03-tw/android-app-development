@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-17dp"
+    tools:layout_editor_absoluteY="-48dp">
+
+    <TextView
+        android:id="@+id/unitPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="地瓜單價(元)"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/pound1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/pound1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/unitPrice"
+        app:layout_constraintStart_toEndOf="@+id/unitPrice"
+        app:layout_constraintTop_toTopOf="@+id/unitPrice">
+
+        <RadioButton
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="斤" />
+
+        <RadioButton
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="公斤" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/enterPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/unitPrice"
+        app:layout_constraintTop_toBottomOf="@+id/unitPrice" />
+
+    <TextView
+        android:id="@+id/buyWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="購買重量"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterPrice" />
+
+    <RadioGroup
+        android:id="@+id/pound2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/buyWeight"
+        app:layout_constraintStart_toEndOf="@+id/buyWeight"
+        app:layout_constraintTop_toTopOf="@+id/buyWeight">
+
+        <RadioButton
+            android:id="@+id/c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="斤" />
+
+        <RadioButton
+            android:id="@+id/d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="公斤" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/enterPound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buyWeight"
+        app:layout_constraintTop_toBottomOf="@+id/buyWeight"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/money1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="每斤價錢 : "
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/buyWeight"
+        app:layout_constraintTop_toBottomOf="@+id/enterPound" />
+
+    <TextView
+        android:id="@+id/money2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="每公斤價錢 : "
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/buyWeight"
+        app:layout_constraintTop_toBottomOf="@+id/money1" />
+
+    <TextView
+        android:id="@+id/howMuch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="購買重量 : "
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/buyWeight"
+        app:layout_constraintTop_toBottomOf="@+id/money2" />
+
+    <TextView
+        android:id="@+id/last1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="斤"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/buyWeight"
+        app:layout_constraintTop_toBottomOf="@+id/howMuch" />
+
+    <TextView
+        android:id="@+id/last2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:text="公斤"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/enterPound"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/last1"
+        app:layout_constraintTop_toBottomOf="@+id/howMuch"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="總共 : "
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/last1"
+        app:layout_constraintTop_toBottomOf="@+id/last1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
